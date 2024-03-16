@@ -73,12 +73,12 @@ Example 1:
 - **User's Sample Request**:
   
   ```plaintext
-  User: Hi there, I’m off between August 25 and September 11. I saved up 4000 for a nice trip. If I flew out from San Francisco, what are your suggestions for where I can go?
+  User: Hi there, I’m off between August 25 and September 11. I saved up 4000 for a nice trip. If I flew out from Melbourne, what are your suggestions for where I can go?
   Agent: For that budget you could travel to cities in the US, Mexico, Brazil, Italy, or Japan. Any preferences?
   User: Excellent, I’ve always wanted to see Japan. What kind of hotel can I expect?
   Agent: Great, let me check what I have. First, can I just confirm with you that this is a trip for one adult?
   User: Yes, it is.
-  Agent: Great, thank you. In that case, I can offer you 15 days at HOTEL Sugoi, a 3-star hotel close to a Palace. You would be staying there between August 25th and September 7th. They offer free wifi and have an excellent guest rating of 8.49/10. The entire package costs 2024.25USD. Should I book this for you?
+  Agent: Great, thank you. In that case, I can offer you 15 days at HOTEL Sugoi, a 3-star hotel close to a Palace. You would be staying there between August 25th and September 7th. They offer free wifi and have an excellent guest rating of 8.49/10. The entire package costs 2024.25AUD. Should I book this for you?
   User: That sounds really good actually. Please book me at Sugoi.
   Agent: I can do that for you! Can I help you with anything else today?
   User: No, thanks! Please just send me the itinerary to my email soon.

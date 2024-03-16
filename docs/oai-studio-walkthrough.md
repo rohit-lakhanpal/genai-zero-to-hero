@@ -186,3 +186,11 @@ Example 1:
   ```plaintext
   What is the value of x in the equation 3x + 5 = 20?
   ```
+
+### Content Filering
+
+Azure OpenAI Service includes a content filtering system that works alongside core models. This system works by running both the prompt and completion through an ensemble of classification models aimed at detecting and preventing the output of harmful content. 
+
+### Wrap up
+
+You can play with this tech, no matter if you're a pro coder or someone who's just curious about what AI can do. So, just have a go!

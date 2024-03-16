@@ -20,9 +20,18 @@ Azure OpenAI Studio isn't just about running AI models; it's a full-blown worksh
 
 ## Let's Get Our Hands Dirty
 
-Getting started with experiments in Azure OpenAI Studio is pretty straightforward. You don't need to wade through tech jargon or have a degree in computer science. Whether you're tweaking models to get them just right or trying out different ideas to see what the AI can do, Azure OpenAI Studio makes it easy and fun. So, why not jump in and start playing with AI? 
+Getting started with experiments in Azure OpenAI Studio is pretty straightforward. You don't need to wade through tech jargon or have a degree in computer science. Whether you're tweaking models to get them just right or trying out different ideas to see what the AI can do, Azure OpenAI Studio makes it easy and fun. 
 
-Let's explore what you can create and learn along the way.
+These are some of the capabilities we can test out:
+1. Writing aid
+1. Summarisation
+1. Chat and Conversation
+1. Code Generation and Transformation
+1. Question Answering
+1. Reasoning over data (text, images, etc.)
+1. Search
+
+So, why not jump in and start playing with AI? 
 
 ### Experiments using Chat Completions:
 

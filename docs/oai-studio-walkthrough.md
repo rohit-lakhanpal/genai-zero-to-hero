@@ -42,8 +42,8 @@ Example 1:
 - **System Prompt**:
   
   ```plaintext
-  - Generate 5 product names using provided seed words.
-  - Ensure names highlight product features, appeal internationally, and evoke positivity.
+  Generate 5 product names using provided product descriptions and seed words.
+  Ensure names highlight product features, appeal internationally, and evoke positivity.
   ```
   
 - **User's Sample Request**:

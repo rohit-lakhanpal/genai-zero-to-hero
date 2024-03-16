@@ -50,6 +50,8 @@ Example 1:
   
   ```plaintext
   Generate product name ideas for a yet to be launched wearable health device that will allow users to monitor their health and wellness in real-time using AI and share their health metrics with their friends and family.
+
+  Seed words: fast, healthy, compact
   ```
 
 #### Summarisation:

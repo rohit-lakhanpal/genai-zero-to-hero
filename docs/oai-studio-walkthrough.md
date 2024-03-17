@@ -6,6 +6,11 @@ Let's talk about the magic of Generative AI and how it's changing the game for e
 
 Now, imagine being able to play with this tech, no matter if you're a pro coder or someone who's just curious about what AI can do. That's where Azure OpenAI Studio comes in. It's this neat space where you can mess around with AI, try different things, and see what sticks, without needing to be an expert.
 
+If you prefer to watch a video, here's a quick overview of Azure OpenAI Studio:
+
+[![Overview of Azure OpenAI Studio](https://img.youtube.com/vi/LnGucwdmSu0/0.jpg)](https://www.youtube.com/watch?v=LnGucwdmSu0)
+
+
 ## What's Azure OpenAI Studio All About?
 
 Azure OpenAI Studio isn't just about running AI models; it's a full-blown workshop for tinkering with AI, designed to be accessible for everyone. Here's a closer look at the key sections:
@@ -17,6 +22,12 @@ Azure OpenAI Studio isn't just about running AI models; it's a full-blown worksh
 - **Chat**: When it comes to creating chatbots or any quick-reply system, the Chat Completions API is your go-to. It's all about giving you fast, concise answers perfect for chatbots, simple Q&A setups, or applications that need quick interactions without a lot of back-and-forth.
 
 - **Assistants**:  If your project requires keeping track of longer conversations, diving deeper into topics, or managing more complex contexts, the Assistants API is what you need. It's designed for applications that need to remember what was said earlier in the conversation, making it ideal for more sophisticated virtual assistants or complex dialogue systems.
+
+## Pre-Requisites
+
+- **Azure Subscription**: You need an active Azure subscription to use Azure OpenAI Studio. If you don't have one, you can create a free account [here](https://azure.microsoft.com/en-us/free/).
+- Apply for access to Azure OpenAI Service at [https://aka.ms/oai/access](https://aka.ms/oai/access). The form covers some questions about your use case, your expected usage, an overview of RAI Practices and Azure OpenAI's transparency note, which provide information and guidelines for responsible use of the service as well as system limitations that may be applicable to your scenario.
+- **Azure OpenAI Service**: Once you have access to Azure OpenAI Service, you can create a resource in the Azure portal using this [guide](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal).
 
 ## Let's Get Our Hands Dirty
 
@@ -54,6 +65,28 @@ Example 1:
   Seed words: fast, healthy, compact
   ```
 
+  > Are not happy with the output? If not, what would you change?
+  > ---
+  > This is where the art and science of prompt engineering comes in. You can tweak the following to get the results you want: 
+  > 1. Tweak the prompt: There are five key elements to include in your prompt:
+  >     - `Persona`: Define the tool’s role or function (e.g. its job title). 
+  >     - `Objective`: State what you want it to achieve. 
+  >     - `Audience`: Specify who will read or hear the message. 
+  >     - `Parameters`: Set the tone, style, length, and any other rules for the tool. 
+  >     - `Context`: Provide the main points, the background information, and the call to action.
+  >     - `Examples`: Include examples of the kind of output you want. (a.k.a. One-shot or Few-shot learning)
+  > 1. Tweak other parameters:
+  >     - Use the `Temperature` parameter to control the randomness of the output. A lower temperature will give you more predictable results, while a higher temperature will give you more creative results.
+  >     - Use the `Top P` parameter to control the diversity of the output.
+  >     - Use the `Max Tokens` parameter to control the length of the output.
+  >     - Use the `Stop` parameter to control the completion of the output.
+  >     - Use the `seed` parameter to control the randomness of the output.
+  > 1. Try a different model (GPT-4-Turbo, GPT-4, GPT-3.5-Turbo, etc.)
+  > 
+  > This article provides a good overview of [prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions).
+
+
+
 #### Summarisation:
 
 Example 1:
@@ -82,6 +115,19 @@ Example 1:
   User: That sounds really good actually. Please book me at Sugoi.
   Agent: I can do that for you! Can I help you with anything else today?
   User: No, thanks! Please just send me the itinerary to my email soon.
+  ```
+
+Example 2:
+- **System Prompt**:
+  
+  ```plaintext
+  Given a conversation transcript between two or more participants, output a JSON object with the following keys and values:
+  - "problem": a summary of the problem or issue discussed in the conversation.
+  - "outcome": a summary of the outcome of the conversation.
+  - "actionItems": a list of action items or next steps discussed in the conversation.
+  - "budget": the budget or financial constraints discussed in the conversation.
+  - "departureCity": the city of departure discussed in the conversation.
+  - "destinationCity": the city of destination discussed in the conversation.
   ```
 
 #### Code Generation and Transformation:
